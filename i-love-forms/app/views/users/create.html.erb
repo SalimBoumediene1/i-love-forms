@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Gossip Project</title>
+    </head>
+    <body class="p-3 mb-2">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand">Gossip</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/users">Subscribe</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
+
+        <h2 class="text-center  mt-5 mb-5">Bienvenue sur le formulaire de creation de compte</h2>
+<div class="p-3 mb-5">
+        <%= form_tag('/users') do %>
+            <h3 class ="mb-5">please subscribe</h3>
+            <div class="row">
+            <%= hidden_field_tag 'token'%>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <%= text_field_tag [:name], nil, placeholder: 'Your name', class: 'form-control'%>
+                </div>
+                <div class="form-group">
+                    <%= email_field_tag [:email], nil, placeholder: 'Your email', class: 'form-control' %>
+                </div>
+                </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <%= text_area_tag [:bio] , nil, placeholder: 'Your biogarphy', class: 'form-control'%>
+                </div>
+            </div>
+                <div class="form-group center">
+                    <div><%= submit_tag 'Save' , class: "btn btn-primary mb-5"%>
+                <div>
+            </div>
+        <% end -%>
+        </div>
+
+        <!--<div class="container">
+        <%= form_for :users do |f| %>
+            First name: <%= f.text_field :username%><br />
+            Email : <%= f.email_field :email %><br />
+            biography: <%= f.text_area :bio %><br />
+            <%= f.submit %>
+        <% end %>-->
+
+   <footer class="footer">
+      <div class="container">
+        <span class="text-muted">footer</span>
+      </div>
+    </footer>      
+    </body>   
+</html>
