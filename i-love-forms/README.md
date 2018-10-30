@@ -7,6 +7,35 @@ application up and running.
 
 https://i-love-forms-salim.herokuapp.com/
 
+# Présentation
+nom            | Pseudo Slack
+ ------------  | -------------
+Saghour khalil | @saghour khalil
+
+nom            | Pseudo Slack
+  ------------ | -------------
+Boumedine Salim| @SaSSou
+
+nom            | Pseudo Slack
+ ------------  | -------------
+Durban kenadi  | @Kenadi.S
+
+nom            | Pseudo Slack
+  ------------ | -------------
+Potie Quentin  | @TinQk
+
+nom            | Pseudo Slack
+ ------------  | -------------
+Jolan Lacroix  | @JOLLACRO
+
+nom            | Pseudo Slack
+  ------------ | -------------
+Jiffard Joslin | @Redcozmo
+
+nom            | Pseudo Slack
+  ------------ | -------------
+Palma Andréa   | @plm
+
 Things you may want to cover:
 
 * Ruby version
